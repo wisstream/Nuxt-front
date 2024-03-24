@@ -2,7 +2,7 @@
 const { find } = useStrapi();
 
 const { data, pending, error } = await useAsyncData("player", async () => {
-  return await find("players", { populate: "data.id" });
+  return await find("players", { populate: "data" });
 });
 </script>
 

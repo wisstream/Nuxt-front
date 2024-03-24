@@ -2,9 +2,7 @@
 
 <template>
   <main role="main">
-    <header>
-      <nav>Header</nav>
-    </header>
+    <header>Tennis Strapi project</header>
     <slot />
     <footer>Footer</footer>
   </main>
@@ -12,8 +10,14 @@
 
 <style>
 header {
-  align-items: center;
-  justify-content: space-evenly;
+  font-size: xx-large;
+  text-align: center;
   background-color: red;
+}
+
+footer {
+  background-color: blue;
+  font-size: xx-large;
+  text-align: center;
 }
 </style>
