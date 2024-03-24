@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-/*import type { Player } from "~/models/player.model",*/
+import type { Player } from "~/models/player.model";
 
 const {findOne} = useStrapi4()
 const route = useRoute()
