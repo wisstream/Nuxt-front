@@ -1,8 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { find } = useStrapi();
+
+const { data, pending, error } = await useAsyncData("player", async () => {
+  return await find("players", { populate: "*" });
+});
+</script>
 
 <template>
   <div>
-    <h1>Test de la page about</h1>
+    <pre> {{ data }}</pre>
   </div>
 </template>
 
