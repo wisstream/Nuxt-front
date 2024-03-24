@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>tony zhang</h1>
+    <h1>Test de la page about</h1>
   </div>
 </template>
 
